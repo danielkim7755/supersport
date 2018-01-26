@@ -1,0 +1,255 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.container::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+@media screen and (min-width: 45em) {
+  .one-sidebar.sidebar-second #content {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 74.19355%;
+  }
+  .one-sidebar.sidebar-second #content:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .one-sidebar.sidebar-second #content {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 65.95745%;
+  }
+  .one-sidebar.sidebar-second #content:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 45em) {
+  .one-sidebar.sidebar-first #content {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 74.19355%;
+    margin-left: 25.80645%;
+  }
+  .one-sidebar.sidebar-first #content:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .one-sidebar.sidebar-first #content {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 74.46809%;
+    margin-left: 25.53191%;
+  }
+  .one-sidebar.sidebar-first #content:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 45em) {
+  .two-sidebars #content {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 48.3871%;
+    margin-left: 25.80645%;
+  }
+  .two-sidebars #content:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .two-sidebars #content {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 40.42553%;
+    margin-left: 25.53191%;
+  }
+  .two-sidebars #content:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 45em) {
+  #sidebar-first {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 22.58065%;
+    margin-left: -77.41935%;
+  }
+  #sidebar-first:last-child {
+    margin-right: 0;
+  }
+  .one-sidebar.sidebar-first #sidebar-first {
+    margin-left: -103.22581%;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  #sidebar-first {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 23.40426%;
+    margin-left: -68.08511%;
+  }
+  #sidebar-first:last-child {
+    margin-right: 0;
+  }
+  .one-sidebar.sidebar-first #sidebar-first {
+    margin-left: -102.12766%;
+  }
+}
+
+@media screen and (min-width: 45em) {
+  #sidebar-second {
+    float: left;
+    display: block;
+    margin-right: 3.22581%;
+    width: 22.58065%;
+    margin-left: 0%;
+  }
+  #sidebar-second:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  #sidebar-second {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 31.91489%;
+    margin-left: 0%;
+  }
+  #sidebar-second:last-child {
+    margin-right: 0;
+  }
+}
+
+#footer {
+  float: none;
+  clear: both;
+}
+
+#header, #footer,
+#sidebar-first,
+#sidebar-second,
+#navigation {
+  background: rgba(170, 170, 170, 0.2);
+}
+
+#header,
+#footer,
+.mission,
+.breadcrumb,
+.node {
+  clear: both;
+}
+
+#block-views-block-nfl-teams-block-1-2 > div:not(.contextual) > div > div:nth-child(-n+6) {
+  background-color: white;
+  margin: 1em 1.5em;
+  box-shadow: 5px 10px 8px #888888;
+  display: inline-block;
+}
+
+#block-views-block-nfl-teams-block-1-2 > div:not(.contextual) > div > div:nth-child(-n+6) > div.views-field.views-field-field-team-logo img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: -45px;
+  left: 3px;
+}
+
+#block-views-block-nfl-teams-block-1-2 > div:not(.contextual) > div > div:nth-child(-n+6) > div.views-field.views-field-name > span {
+  position: relative;
+  left: 60px;
+  font-size: 14pt;
+  font-weight: bolder;
+  line-height: 0.5em;
+}
+
+#block-views-block-nfl-teams-block-1-2 > div:not(.contextual) > div > div:nth-child(-n+6) > div:nth-child(2) > span {
+  color: #D3D3D3;
+  position: relative;
+  left: 60px;
+}
+
+#block-views-block-nfl-teams-block-1-2 > div:not(.contextual) > div > div:nth-child(-n+6) > div:nth-child(4) {
+  text-align: left;
+  background-color: #FBFFFF;
+}
+
+#block-supersport-content > div > div > div.views-row {
+  border-bottom: 1px solid gray;
+  margin-bottom: 5%;
+  padding-bottom: 3%;
+}
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-field-image {
+  float: left;
+  width: 25%;
+}
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-field-nfl- {
+  float: left;
+  width: 10%;
+  font-size: 12px;
+}
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-field-nfl- > div > a {
+  color: blue;
+}
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-changed {
+  float: left;
+  width: 20%;
+  font-size: 12px;
+}
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-uid {
+  float: left;
+  width: 45%;
+  font-size: 12px;
+}
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-title {
+  margin-left: 25%;
+}
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-title > span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-body {
+  font-size: 15px;
+  margin-left: 25%;
+}

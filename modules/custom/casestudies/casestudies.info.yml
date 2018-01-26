@@ -1,0 +1,5 @@
+name: casestudies
+type: module
+description: casestudies module
+core: 8.x
+package: Custom

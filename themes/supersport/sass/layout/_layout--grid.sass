@@ -1,0 +1,171 @@
+// Layout
+// ------
+// Using a negative margin technique, made possible with Bourbon Neat, the page
+// is loaded in this order:
+
+// 1. Header
+// 2. Content
+// 3. Navigation menus
+// 4. Sidebar Left
+// 5. Sideabr Right
+//
+// Layout rules.
+// (Disclaimer: do not change if you're not sure you know what you're doing.)
+
+.container
+  @include outer-container
+  width: auto
+
+#content
+  .no-sidebar &
+    // 100% width for small screens. No definitions required.
+    // Same logic for medium screens. No definitions required.
+    // Same logic for large screens. No definitions required.
+
+  .one-sidebar.sidebar-second &
+    // 100% width for small screens. No definitions required.
+    // Span this div 6 columns wide for medium screens.
+    @include media($medium-screen-up)
+      @include span-columns(6)
+    // Span this div 8 columns wide for large screens.
+    @include media($large-screen-up)
+      @include span-columns(8)
+
+  .one-sidebar.sidebar-first &
+    // 100% width for small screens. No definitions required.
+    // Span this div 6 columns wide for medium screens.
+    @include media($medium-screen-up)
+      @include span-columns(6)
+      @include shift(2)
+    // Span this div 9 columns wide for large screens.
+    @include media($large-screen-up)
+      @include span-columns(9)
+      @include shift(3)
+
+  .two-sidebars &
+    // 100% width for small screens. No definitions required.
+    // Span this div 4 columns wide for medium screens.
+    @include media($medium-screen-up)
+      @include span-columns(4)
+      @include shift(2)
+    // Span this div 5 columns wide for large screens.
+    @include media($large-screen-up)
+      @include span-columns(5)
+      @include shift(3)
+
+#sidebar-first
+  // 100% width for small screens. No definitions required.
+  // Span this div 2 columns wide for medium screens.
+  @include media($medium-screen-up)
+    @include span-columns(2)
+    // Shift it to the left to place it in the far left column. Different shift for two-sidebar and one-sidebar layout.
+    @include shift(-6)
+    .one-sidebar.sidebar-first &
+      @include shift(-8)
+  @include media($large-screen-up)
+    // Span this div 3 columns wide for large screens.
+    @include span-columns(3)
+    // Shift it to the left to place it in the far left column. Different shift for two-sidebar and one-sidebar layout.
+    @include shift(-8)
+    .one-sidebar.sidebar-first &
+      @include shift(-12)
+
+#sidebar-second
+  // 100% width for small screens. No definitions required.
+  // Span this div 2 columns wide for medium screens.
+  @include media($medium-screen-up)
+    @include span-columns(2)
+    @include shift(0)
+  @include media($large-screen-up)
+    // Span this div 4 columns wide for large screens.
+    @include span-columns(4)
+    @include shift(0)
+
+#footer
+  float: none
+  clear: both
+
+// Region Colors. Delete when starting a new theme.
+#header, #footer,
+#sidebar-first,
+#sidebar-second,
+#navigation
+  background: rgba(#aaa, 0.2)
+
+// Layout Helpers
+#header,
+#footer,
+.mission,
+.breadcrumb,
+.node
+  clear: both
+
+// My Edits
+// Side Bar Stuff
+#block-views-block-nfl-teams-block-1-2 > div:not(.contextual) > div > div:nth-child(-n+6)
+  background-color: white
+  margin: 1em 1.5em
+  box-shadow: 5px 10px 8px #888888
+  display: inline-block
+
+#block-views-block-nfl-teams-block-1-2 > div:not(.contextual) > div > div:nth-child(-n+6) > div.views-field.views-field-field-team-logo img
+  width: 50px
+  height: 50px
+  position: relative
+  top: -45px
+  left: 3px
+
+#block-views-block-nfl-teams-block-1-2 > div:not(.contextual) > div > div:nth-child(-n+6) > div.views-field.views-field-name > span
+  position: relative
+  left: 60px
+  font-size: 14pt
+  font-weight: bolder
+  line-height: 0.5em
+
+#block-views-block-nfl-teams-block-1-2 > div:not(.contextual) > div > div:nth-child(-n+6) > div:nth-child(2) > span
+  color: #D3D3D3
+  position: relative
+  left: 60px
+
+#block-views-block-nfl-teams-block-1-2 > div:not(.contextual) > div > div:nth-child(-n+6) > div:nth-child(4)
+  text-align: left
+  background-color: #FBFFFF
+
+//Center View Stuff
+#block-supersport-content > div > div > div.views-row
+  border-bottom: 1px solid gray
+  margin-bottom: 5%
+  padding-bottom: 3%
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-field-image
+  float: left
+  width: 25%
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-field-nfl-
+  float: left
+  width: 10%
+  font-size: 12px
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-field-nfl- > div > a
+  color: blue
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-changed
+  float: left
+  width: 20%
+  font-size: 12px
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-uid
+  float: left
+  width: 45%
+  font-size: 12px
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-title
+  margin-left: 25%
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-title > span
+  font-size: 20px
+  font-weight: bold
+
+#block-supersport-content > div > div > div.views-row > div.views-field.views-field-body
+  font-size: 15px
+  margin-left: 25%
